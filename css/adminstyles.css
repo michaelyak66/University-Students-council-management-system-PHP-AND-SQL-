@@ -1,0 +1,46 @@
+.navbar-nav li {
+    font-weight: bold;
+    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.line {
+    margin-top: -20px;
+}
+
+body {
+    background-color: #2f4050;
+}
+
+.col-sm-10 {
+    background-color: #ffffff;
+}
+
+.col-sm-12 {
+    background-color: #ffffff;
+}
+
+#side_Menue a {
+    color: #9fb1c2;
+}
+
+#side_Menue .active a {
+    color: #ffffff;
+    background-color: #27aae1;
+    font-weight: bold;
+}
+
+#side_Menue a:hover {
+    color: #ffffff;
+    background-color: #1ab394;
+    font-weight: bold;
+    display: block;
+}
+
+#footer {
+    padding: 10px;
+    border-top: 1px solid black;
+    color: #eeeeee;
+    background-color: #211f22;
+    text-align: center;
+}

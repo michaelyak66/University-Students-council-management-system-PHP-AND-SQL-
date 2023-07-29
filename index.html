@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.ico" />
+    <title>SRA</title>
+    <!-- Bootstrap -->
+    <link href="css1/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css1/css/bootstrap.css" rel="stylesheet">
+    <!-- DL Menu CSS -->
+    <link href="css1/js/dl-menu/component.css" rel="stylesheet">
+    <!--SLICK SLIDER CSS-->
+    <link rel="stylesheet" type="text/css" href="css1/css/slick.css" />
+    <!-- Font Awesome StyleSheet CSS -->
+    <link href="css1/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font Awesome StyleSheet CSS -->
+    <link href="css1/css/svg.css" rel="stylesheet">
+    <!-- Pretty Photo CSS -->
+    <link href="css1/css/prettyPhoto.css" rel="stylesheet">
+    <!-- Shortcodes CSS -->
+    <link href="css1/css/shortcodes.css" rel="stylesheet">
+    <!-- Widget CSS -->
+    <link href="css1/css/widget.css" rel="stylesheet">
+    <!-- Typography CSS -->
+    <link href="css1/css/typography.css" rel="stylesheet">
+    <!-- Custom Main StyleSheet CSS -->
+    <link href="css1/style.css" rel="stylesheet">
+    <!-- Color CSS -->
+    <link href="css1/css/color.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="css1/css/responsive.css" rel="stylesheet">
+    <style>
+        .loader_bg {
+            position: fixed;
+            z-index: 999999;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .loader {
+            border: 0 soild transparent;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: calc(50vh - 75px);
+            left: calc(50vw - 75px);
+        }
+        
+        .loader:before,
+        .loader:after {
+            content: '';
+            border: 1em solid #ff5733;
+            border-radius: 50%;
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: loader 2s linear infinite;
+            opacity: 0;
+        }
+        
+        .loader:before {
+            animation-delay: .5s;
+        }
+        
+        @keyframes loader {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+        
+        .header-overlay {
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            z-index: 1;
+            background: black;
+            opacity: 0.7;
+        }
+        
+        .text-responsive {
+            font-size: calc(100% + 1vw + 1vh);
+        }
+        
+        p {
+            word-break: keep-all;
+        }
+        
+        .ww {
+            margin: 5px;
+        }
+        
+        .w {
+            color: #000;
+            margin-left: 20px;
+            font-weight: 00;
+        }
+        
+        .button {
+            background-color: #AC0307;
+            color: #fff;
+        }
+        
+        .m {
+            margin-left: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+    <!--iqoniq Wrapper Start-->
+    <div class="iq_wrapper">
+        <!--Header Wrap Start-->
+        <header class="iq_header_1">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+                    <a class="m iq_logo" href="#">
+                        <img src="css1/images/logo.jpg" class="d-inline-block align-top" alt="">
+                    </a>
+
+                    <button class="button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navigation collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="ww navbar-nav">
+                            <li class="w nav-item active">
+                                <a class=" nav-link" href="index.html"><i class="fa fa-home "></i> Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="w nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="dues.html">
+                                    <i class="fa fa-money "></i> Paid Dues
+                                </a>
+                            </li>
+                            <li class="w nav-item ">
+                                <a class="nav-link " href="about-us.html "><i class="fa fa-user "></i> About Us</a>
+                            </li>
+                            <li class="w nav-item ">
+                                <a class="nav-link " href="sports.html "><i class="fa fa-circle "></i> Sports</a>
+                            </li>
+                            <li class="w nav-item ">
+                                <a class="nav-link " href="blog-large.PHP "><i class="fa fa-pencil " aria-hidden="true "></i> Blog</a>
+                            </li>
+                            <li class="w nav-item ">
+                                <a class="nav-link " href="event-calender.html "><i class="fa fa-calendar-check-o " aria-hidden="true "></i> Event Calender</a>
+                            </li>
+                            <li class="w nav-item ">
+                                <a class="nav-link " href="messages/index.php "><i class="fa fa-commenting " aria-hidden="true "></i> Anonymous Message</a>
+                            </li>
+                            <li class="w nav-item ">
+                                <a class="nav-link " href="login.php "><i class="fa fa-lock " aria-hidden="true "></i> Admin</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <!--Navigation wrap End-->
+    </div>
+    <!--Top Strip Wrap End-->
+    </div>
+    </header>
+    <!--Header Wrap End-->
+    <!--Banner Wrap Start-->
+
+    <div class=" iq_banner ">
+
+        <ul class="slider ">
+            <li class=" ">
+                <!--Banner Thumb START-->
+                <video src="rain.mp4 " width="100% " muted autoplay loop></video>
+                <div class="iq-caption-wrapper text-left ">
+                    <div class="iq_banner_caption container ">
+                        <div class="iq-caption ">
+                            <div class="iq-caption-title ">The Students Representative Assembly</div>
+                            <div class="iq-caption-text ">welcome to Veritas university</div>
+                            <div class="iq_link_1 ">learn more</div>
+                        </div>
+                    </div>
+                </div>
+                <!--Banner Thumb End-->
+            </li>
+
+        </ul>
+    </div>
+    <!--Banner Wrap End-->
+    <!--Iqoniq Content Start-->
+    <div class="iq_content_wrap ">
+        <!--We Are Professional Wrap Start-->
+        <div class="we_professional_bg ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-sm-8 ">
+                        <section>
+                            <div class=" ">
+
+                                <!--Heading Wrap Start-->
+                                <div class=" iq_heading_1 text-left ">
+                                    <h4>Seeking The<span>Truth</span></h4>
+                                    <p style="word-break: keep-all; ">
+                                        Veritas university is a dynamic community of students with Christian orientation and inspiration who are motivated by the ideals of hard work, integrity, dicipline and creativeness, and dedicated to Catholic principles and attitudes, work together to
+                                        create knowledge for the advancement of the Nigerian society
+                                </div>
+                            </div>
+
+                            <!--Heading Wrap End-->
+                            <div class=" iq_heading_1 text-left col-md-6 col-sm-6 ">
+                                <h4>The purposes of the<span>Assembly</span></h4>
+                            </div>
+                            <div class="row ">
+                                <!--Services Start-->
+                                <div class="col-md-6 col-sm-6 ">
+                                    <div class="iq_professional_services ">
+                                        <span class="icon-lecture ">
+                                                <span class="path1 "></span><span class="path2 "></span><span class="path3 "></span><span class="path4 "></span><span class="path5 "></span><span class="path6 "></span>
+                                        <span class="path7 "></span><span class="path8 "></span><span class="path9 "></span><span class="path10 "></span><span class="path11 "></span><span class="path12 "></span><span class="path13
+                                    "></span><span class="path14 "></span>
+                                        <span class="path15 "></span><span class="path16 "></span><span class="path17 "></span><span class="path18 "></span><span class="path19 "></span><span class="path20 "></span><span class="path21
+                                    "></span><span class="path22 "></span>
+                                        <span class="path23 "></span><span class="path24 "></span><span class="path25 "></span><span class="path26 "></span><span class="path27 "></span><span class="path28 "></span><span class="path29
+                                    "></span><span class="path30 "></span>
+                                        <span class="path31 "></span><span class="path32 "></span><span class="path33 "></span><span class="path34 "></span><span class="path35 "></span><span class="path36 "></span><span class="path37
+                                    "></span><span class="path38 "></span>
+                                        </span>
+                                        <h5>
+                                            <a href="# ">Development</a>
+                                        </h5>
+                                        <p>To develop better student welfare structures and propose activities based on respect for the dignity of the human person in line with Catholic Social Teachings and take measures to strengthen such structures.</p>
+                                    </div>
+                                </div>
+                                <!--Services End-->
+                                <!--Services Start-->
+                                <div class="col-md-6 col-sm-6 ">
+                                    <div class="iq_professional_services ">
+                                        <span class="icon-doctor-2 ">
+                                                <span class="path1 "></span><span class="path2 "></span><span class="path3 "></span><span class="path4 "></span><span class="path5 "></span><span class="path6 "></span>
+                                        <span class="path7 "></span><span class="path8 "></span><span class="path9 "></span><span class="path10 "></span><span class="path11 "></span><span class="path12 "></span><span class="path13
+                                    "></span><span class="path14 "></span>
+                                        <span class="path15 "></span><span class="path16 "></span><span class="path17 "></span><span class="path18 "></span><span class="path19 "></span><span class="path20 "></span><span class="path21
+                                    "></span><span class="path22 "></span>
+                                        <span class="path23 "></span><span class="path24 "></span><span class="path25 "></span><span class="path26 "></span><span class="path27 "></span><span class="path28 "></span><span class="path29
+                                    "></span><span class="path30 "></span>
+                                        <span class="path31 "></span><span class="path32 "></span><span class="path33 "></span><span class="path34 "></span><span class="path35 "></span><span class="path36 "></span><span class="path37
+                                    "></span><span class="path38 "></span>
+                                        </span>
+                                        <h5><a href="# ">Service</a></h5>
+                                        <p>To serve as the center for harmonizing healthy Staff and Student relationship.</p>
+                                    </div>
+                                </div>
+                                <!--Services End-->
+                                <!--Services Start-->
+                                <div class="col-md-6 col-sm-6 ">
+                                    <div class="iq_professional_services ">
+                                        <span class="icon-medical-3 ">
+                                                <span class="path1 "></span><span class="path2 "></span><span class="path3 "></span><span class="path4 "></span><span class="path5 "></span><span class="path6 "></span>
+                                        <span class="path7 "></span><span class="path8 "></span><span class="path9 "></span><span class="path10 "></span><span class="path11 "></span><span class="path12 "></span><span class="path13
+                                    "></span><span class="path14 "></span>
+                                        <span class="path15 "></span><span class="path16 "></span><span class="path17 "></span><span class="path18 "></span><span class="path19 "></span><span class="path20 "></span><span class="path21
+                                    "></span><span class="path22 "></span>
+                                        <span class="path23 "></span><span class="path24 "></span>
+                                        </span>
+                                        <h5>
+                                            <a href="# ">Creativity</a>
+                                        </h5>
+                                        <p>
+                                            To initiate and create platforms for interactions with other universities in Nigeria and other parts of the world.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--Services End-->
+                                <!--Services Start-->
+                                <div class="col-md-6 col-sm-6 ">
+                                    <div class="iq_professional_services ">
+                                        <span class="icon-debate ">
+                                                <span class="path1 "></span><span class="path2 "></span><span class="path3 "></span><span class="path4 "></span><span class="path5 "></span><span class="path6 "></span>
+                                        <span class="path7 "></span><span class="path8 "></span><span class="path9 "></span><span class="path10 "></span><span class="path11 "></span><span class="path12 "></span>
+                                        </span>
+                                        <h5><a href="# ">Peace</a></h5>
+                                        <p>To maintain peace and tranquility among students on campus by initiating activities geared towards peace.</p>
+                                    </div>
+                                </div>
+                                <!--Services End-->
+                            </div>
+                            <!--Professional Services Wrap End-->
+                        </section>
+                    </div>
+                    <!--Search Wrap Start-->
+
+                </div>
+            </div>
+        </div>
+        <!--Our Gallery Wrap End-->
+        <!--UpComming Event Wrap Start-->
+        <section class="iq_upcomming_bg ">
+            <div class="container ">
+                <!--Heading Wrap Start-->
+                <div class="iq_heading_1 text-center ">
+                    <h4>Up Coming <span>Events</span></h4>
+                </div>
+                <!--Heading Wrap End-->
+                <!--Upcomming List Wrap Start-->
+                <div class="row ">
+                    <!--UpComming Event Start-->
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="iq_upcomming_event ">
+                            <figure>
+                                <img src="css1/extra-images/talent.jpg " alt="Image Here ">
+                            </figure>
+                            <div class="iq_upcomming_des ">
+                                <p>coming soon</p>
+                                <h5><a href="# ">VUNA GOT TALENT 2022</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--UpComming Event End-->
+                    <!--UpComming Event Start-->
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="iq_upcomming_event ">
+                            <figure>
+                                <img src="css1/extra-images/pageant.jpg " alt="Image Here ">
+                            </figure>
+                            <div class="iq_upcomming_des ">
+                                <p>coming soon</p>
+                                <h5>
+                                    <a href="# ">Mr and Mrs Vuna 2022</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--UpComming Event End-->
+                    <!--UpComming Event Start-->
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="iq_upcomming_event ">
+                            <figure>
+                                <img src="css1/extra-images/CULTURAL.jpg " alt="Image Here ">
+                            </figure>
+                            <div class="iq_upcomming_des ">
+                                <p>COMING SOON</p>
+                                <h5>
+                                    <a href="# ">VERITAS CULTURAL DAY </a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--UpComming Event End-->
+                    <!--UpComming Event Start-->
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="iq_upcomming_event ">
+                            <figure>
+                                <img src="css1/extra-images/magazine.jpg " alt="Image Here ">
+                            </figure>
+                            <div class="iq_upcomming_des ">
+                                <p>COMING SOON</p>
+                                <h5>
+                                    <a href="# ">the second edition veritas magazine</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--UpComming Event End-->
+                    <!--UpComming Event Start-->
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="iq_upcomming_event ">
+                            <figure>
+                                <img src="css1/extra-images/bee.jpg " alt="Image Here ">
+                            </figure>
+                            <div class="iq_upcomming_des ">
+                                <p>COMING SOON</p>
+                                <h5>
+                                    <a href="# ">the registrar's spelling bee</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--UpComming Event End-->
+                    <!--UpComming Event Start-->
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="iq_upcomming_event ">
+                            <figure>
+                                <img src="css1/extra-images/debate.jpg " alt="Image Here ">
+                            </figure>
+                            <div class="iq_upcomming_des ">
+                                <p>coming soon</p>
+                                <h5>
+                                    <a href="# ">the vice chancelors debate</a
+                                    ></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!--UpComming Event End-->
+                        <!--UpComming Event Start-->
+                        <div class="col-md-3 col-sm-6 ">
+                            <div class="iq_upcomming_event ">
+                                <figure>
+                                    <img src="css1/extra-images/dinner.jpg " alt="Image Here ">
+                                </figure>
+                                <div class="iq_upcomming_des ">
+                                    <p>coming soon</p>
+                                    <h5><a href="# ">Annual student week dinner </a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--UpComming Event End-->
+                    <!--UpComming Event Start-->
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="iq_upcomming_event ">
+                            <figure>
+                                <img src="css1/extra-images/game.jpg " alt="Image Here ">
+                            </figure>
+                            <div class="iq_upcomming_des ">
+                                <p>coming soon</p>
+                                <h5><a href="# ">game night</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--UpComming Event End-->
+                </div>
+                <!--Upcomming List Wrap End-->
+            </div>
+        </section>
+        <!--UpComming Event Wrap End-->
+        <!--Number Counter Wrap Start-->
+
+        <!--Number Counter Wrap End-->
+        <!--Our Teacher Wrap Start-->
+        <!--Our Blog Slider Start-->
+        <!--Our Blog Slider End-->
+
+    </div>
+    <!--Iqoniq Content End-->
+    <!--Brand Slider Start-->
+
+    <!--Contact Info Wrap Start-->
+    <div class="iq_contact_info ">
+        <div class="container ">
+            <ul>
+                <li>
+                    <i class="fa fa-map-marker "></i>
+                    <div class="iq_info_wrap ">
+                        <h5>Veritas University</h5>
+                        <p>Bwarri Area<span>Council</span></p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa fa-phone "></i>
+                    <div class="iq_info_wrap ">
+                        <h5>Contact Number</h5>
+                        <span>+234802784811</span>
+                        <span>+234730034134</span>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa fa-phone "></i>
+                    <div class="iq_info_wrap ">
+                        <h5>Email;</h5>
+                        <a href="sra@voiceofvuna.com ">sra@voiceofvuna.com</a>
+                        <a href="help@voiceofvuna.com ">help@voiceofvuna.com</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Contact Info Wrap End-->
+    <!--Footer Wrap Start-->
+    <footer class="iq_footer_bg ">
+        <div class="container ">
+            <div class="row ">
+                <!--Widget About Start-->
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="iq_uni_title ">
+                        <!--Widget Title Start-->
+                        <h4>Availability<span>Periods</span></h4>
+                        <!--Widget Title End-->
+                        <ul>
+                            <li><span>Moday - Friday</span> 08:00- 05:00</li>
+                            <li><span>Saturday</span> Closed</li>
+                            <li><span>Sunday</span> Closed</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Widget About End-->
+                <!--Widget Archive Start-->
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="widget widget_archive ">
+                        <!--Widget Title Start-->
+                        <h5 class="widget-title "><span>Our</span> Services</h5>
+                        <!--Widget Title End-->
+                        <!--Social Media Start-->
+                        <ul>
+                            <li>
+                                <a href="messages/index.php ">Anonymous</a>
+                            </li>
+                            <li>
+                                <a href="blog-large.PHP ">Blog</a>
+                            </li>
+                            <li>
+                                <a href="sports.html ">Sports</a>
+                            </li>
+                            <li>
+                                <a href="event-calender.html ">Calender</a>
+                            </li>
+
+                        </ul>
+                        <!--Social Media End-->
+                    </div>
+                </div>
+                <!--Widget Archive End-->
+                <!--Widget Flickr Start-->
+
+                <!--Widget Flickr End-->
+                <!--Widget News Letter Start-->
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="widget iq_footer_newsletter ">
+
+                        <!--Widget Title Start-->
+                        <h5 class="widget-title border-none "><span>Our</span> socials</h5>
+                        <!--Widget Title Start-->
+                        <ul class="iq_footer_social ">
+                            <li>
+                                <a href="https://instagram.com/veritasblock?utm_medium=copy_link "><i class="fa fa-instagram "></i></a>
+                            </li>
+                            <li>
+                                <a href="# "><i class="fa fa-twitter "></i></a>
+                            </li>
+                            <li>
+                                <a href="# "><i class="fa fa-facebook "></i></a>
+                            </li>
+                            <li>
+                                <a href="# "><i class="fa fa-pinterest "></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Widget News Letter End-->
+            </div>
+        </div>
+    </footer>
+    <!--Footer Wrap End-->
+    <!--Copy Right Start-->
+    <div class="footer_strip ">
+        <h5>
+            <a target="_blank " href="https://veritas.edu.ng ">Veritas University</a>
+        </h5>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <!--iqoniq Wrapper End-->
+    <!--Javascript Library-->
+    <script>
+        setTimeout(function() {
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+    <script src="css1/js/jquery.js "></script>
+    <!--Bootstrap core JavaScript-->
+    <script src="css1/js/bootstrap.min.js "></script>
+    <!--SLICK SLIDER JavaScript-->
+    <script src="css1/js/slick.min.js "></script>
+    <!--Dl Menu Script-->
+    <script src="css1/js/dl-menu/modernizr.custom.js "></script>
+    <script src="css1/js/dl-menu/jquery.dlmenu.js "></script>
+    <!--Pretty Photo JavaScript-->
+    <script src="css1/js/jquery.prettyPhoto.js "></script>
+    <!--Image Filterable JavaScript-->
+    <script src="css1/js/jquery-filterable.js "></script>
+    <!--Number Count (Waypoints) JavaScript-->
+    <script src="css1/js/waypoints-min.js "></script>
+    <!--Custom JavaScript-->
+    <script src="css1/js/custom.js "></script>
+</body>
+<script src="css1/js/jquery.prettyPhoto.js "></script>
+<!--Image Filterable JavaScript-->
+<script src="css1/js/jquery-filterable.js "></script>
+<!--Number Count (Waypoints) JavaScript-->
+<script src="css1/js/waypoints-min.js "></script>
+<!--Custom JavaScript-->
+<script src="css1/js/custom.js "></script>
+</body>
+
+</html>
+
+</html>

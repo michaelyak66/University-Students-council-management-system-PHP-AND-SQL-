@@ -1,0 +1,23 @@
+[17-Mar-2022 17:53:33 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/ahzirahs/public_html/TEST/include/db.php on line 2
+[17-Mar-2022 17:53:33 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/ahzirahs/public_html/TEST/include/sessions.php on line 3
+[17-Mar-2022 17:53:33 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home2/ahzirahs/public_html/TEST/100level.php:85
+Stack trace:
+#0 /home2/ahzirahs/public_html/TEST/100level.php(85): mysqli_query(false, 'SELECT * FROM c...')
+#1 {main}
+  thrown in /home2/ahzirahs/public_html/TEST/100level.php on line 85
+[17-Mar-2022 17:54:59 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/ahzirahs/public_html/TEST/include/db.php on line 2
+[17-Mar-2022 17:54:59 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/ahzirahs/public_html/TEST/include/sessions.php on line 3
+[17-Mar-2022 17:54:59 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home2/ahzirahs/public_html/TEST/blog-large.PHP:223
+Stack trace:
+#0 /home2/ahzirahs/public_html/TEST/blog-large.PHP(223): mysqli_query(false, 'SELECT * FROM a...')
+#1 {main}
+  thrown in /home2/ahzirahs/public_html/TEST/blog-large.PHP on line 223
+[17-Mar-2022 17:55:21 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/ahzirahs/public_html/TEST/include/db.php on line 2
+[18-Mar-2022 01:59:59 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/ahzirahs/public_html/TEST/include/db.php on line 2
+[18-Mar-2022 01:59:59 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/ahzirahs/public_html/TEST/include/sessions.php on line 3
+[18-Mar-2022 01:59:59 America/Boise] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home2/ahzirahs/public_html/TEST/100level.php:85
+Stack trace:
+#0 /home2/ahzirahs/public_html/TEST/100level.php(85): mysqli_query(false, 'SELECT * FROM c...')
+#1 {main}
+  thrown in /home2/ahzirahs/public_html/TEST/100level.php on line 85
+[18-Mar-2022 02:50:57 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/ahzirahs/public_html/TEST/include/db.php on line 2
